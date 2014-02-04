@@ -1,8 +1,10 @@
-//INITIALIZE THE SDK
+var client; //instance of Apigee.Client
+
+function initializeSDK(){
 
 
 
-
+}
 
 /* 1. Create a new entity
 
@@ -21,7 +23,6 @@ function createEntity () {
     - Let's also specify some properties for your entity. Properties are formatted 
       as key-value pairs. We've started you off with three properties in addition 
       to type, but you can add any properties you want.    */
-
 
 }
 
