@@ -1,6 +1,8 @@
-var client; //instance of Apigee.Client
+var currentUUID;
+var dataClient; //instance of Apigee.Client 
 
 function initializeSDK(){
+
 
 
 

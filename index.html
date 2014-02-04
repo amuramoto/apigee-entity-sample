@@ -24,7 +24,7 @@ include apigee.js from the /js directory. -->
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
         <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
-        <script src="apigee.js"></script>
+        <script src="js/index.js"></script>
         <script>
 			$(document).ready( function(){				
 				$('#create-button').bind('click',function () {createEntity();});
@@ -32,8 +32,10 @@ include apigee.js from the /js directory. -->
 				$('#retrieve-button').bind('click',function () {updateEntity();});
 				$('#page-button').bind('click',function () {deleteEntity();});
 	        });
-	    </script>                
-	    <!--INCLUDE THE SDK HERE-->	    
+	    </script>   
+	                 		
+	    <!--INCLUDE THE SDK HERE-->
+        
         <script type="text/javascript">initializeSDK();</script>
     </head>
     <body>        
