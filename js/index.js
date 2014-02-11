@@ -39,7 +39,7 @@ function createEntity () {
    
 function retrieveEntity () {
 	/*
-	- Specify the 'type' of the entity to be retrieved, 'book' in this case.
+	- Specify the 'type' of the entity to be retrieved, 'restaurant' in this case.
 	- Specify the 'UUID' property of the entity to be retrieved. You can get this from the 
 	  response we showed you when the entity was created. */		              
 
@@ -59,9 +59,8 @@ function updateEntity() {
 		   - Specify the following in the 'data' property:
 		   		- The 'type' and 'uuid' of the entity to be updated so that the API knows what 
 		   		  entity you are trying to update.
-		   		- New properties to add to the enitity. In this case, we'll add a property 
-		   		  to show whether the book is available.
-		   		- New values for existing properties. In this case, we are updating the 'price' property. */
+		   		- New properties to add to the enitity. In this case, we'll add a 'location'  
+		   		  property.
 
 
 }
@@ -72,20 +71,6 @@ function updateEntity() {
 
    Now that we've created, retrieved and updated our entity, let's delete it. This will 
    permanently remove the entity from your data store. */
-			
-function deleteEntity () {
-
-	/* - Specify your Apigee.Client object in the 'client' property. In this case, 'dataClient'.
-			   - Specify the 'type' and 'uuid' of the entity to be deleted in the 'data' property so
-			     that the API knows what entity you are trying to delete. */
-			   		
-
-}
-
-/* 5. Get the user's geolocation
-
-   To use geoquerying, we need to get the user's geolocation from their device or browser. For this app, we'll 
-   store the latitude and longitude in the corresponding global variables. */
    
 function getLocation () {
 	
@@ -104,3 +89,17 @@ function getLocation () {
 function geoQuery () {
 
 }
+
+function deleteEntity () {
+
+	/* - Specify your Apigee.Client object in the 'client' property. In this case, 'dataClient'.
+			   - Specify the 'type' and 'uuid' of the entity to be deleted in the 'data' property so
+			     that the API knows what entity you are trying to delete. */
+			   		
+
+}
+
+/* 5. Get the user's geolocation
+
+   To use geoquerying, we need to get the user's geolocation from their device or browser. For this app, we'll 
+   store the latitude and longitude in the corresponding global variables. */
