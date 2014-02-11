@@ -1,4 +1,6 @@
 var currentUUID;
+var latitude;
+var longitude;
 var dataClient; //instance of Apigee.Client 
 
 function initializeSDK(){
@@ -77,5 +79,28 @@ function deleteEntity () {
 			   - Specify the 'type' and 'uuid' of the entity to be deleted in the 'data' property so
 			     that the API knows what entity you are trying to delete. */
 			   		
+
+}
+
+/* 5. Get the user's geolocation
+
+   To use geoquerying, we need to get the user's geolocation from their device or browser. For this app, we'll 
+   store the latitude and longitude in the corresponding global variables. */
+   
+function getLocation () {
+	
+	
+	
+}
+
+
+/* 6. Query entities by location
+
+   Once we have the user's location, we can pass it as a query parameter of our API request to get all entities within
+   a specified radius (in meters) of a given point.
+   
+   We'll find all entities within 8046 meters (~5 miles) of the Apigee office (37.333758, -121.894161) */
+   
+function geoQuery () {
 
 }
