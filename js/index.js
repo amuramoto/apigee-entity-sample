@@ -60,7 +60,7 @@ function updateEntity() {
 		   		- The 'type' and 'uuid' of the entity to be updated so that the API knows what 
 		   		  entity you are trying to update.
 		   		- New properties to add to the enitity. In this case, we'll add a 'location'  
-		   		  property.
+		   		  property.*/
 
 
 }
