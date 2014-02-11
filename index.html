@@ -27,10 +27,12 @@ include apigee.js from the /js directory. -->
         <script src="js/index.js"></script>
         <script>
 			$(document).ready( function(){				
+				//getLocation();
 				$('#create-button').bind('click',function () {createEntity();});
 				$('#add-button').bind('click',function () {retrieveEntity();});
 				$('#retrieve-button').bind('click',function () {updateEntity();});
-				$('#page-button').bind('click',function () {deleteEntity();});
+				$('#delete-button').bind('click',function () {deleteEntity();});
+				$('#geo-button').bind('click',function () {geoQuery();});
 	        });
 	    </script>   
 	                 		
@@ -52,11 +54,14 @@ include apigee.js from the /js directory. -->
 						Next we retrieve the entity.<br />
 						<a id='add-button' data-role='button' data-inline='true'>Retrieve</a></li>
 					<li><strong>Update an entity</strong><br />
-						Let's update our entity by adding some additional properties. This will add a 'price' and 'available' property to our book entity<br />
+						Let's update our entity by adding some additional properties.<br />
 						<a id='retrieve-button' data-role='button' data-inline='true'>Update</a></li>
+					<li><strong>Geoquery for entities</strong><br />
+						Next, we query the API for entities based on location.<br />
+						<a id='geo-button' data-role='button' data-inline='true'>Delete</a></li>
 					<li><strong>Delete an entity</strong><br />
 						Last, we delete our entity.<br />
-						<a id='page-button' data-role='button' data-inline='true'>Delete</a></li>
+						<a id='delete-button' data-role='button' data-inline='true'>Delete</a></li>
 				</ol>
 			</div>			
 		</div>
